@@ -3,7 +3,7 @@ html, body {
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
-    background-color: rgba(221,222,221,255);
+    background-color: rgb(200,200,200);
 }
 
 body{
