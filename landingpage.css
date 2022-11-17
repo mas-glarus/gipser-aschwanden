@@ -385,7 +385,8 @@ h6 {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .footer__logo {
@@ -413,6 +414,33 @@ h6 {
 
 .footer_contact h3 {
     text-align: center;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+.copyright img {
+    width: .75rem;
+    height: .75rem;
+}
+
+.copyrightCompany {
+    font-size: .75rem;
+    padding: 0 0 0 .25rem;
+}
+
+.impressum {
+    font-size: .75rem;
+    padding: 0 1rem 0 0;
+}
+
+.impressum a {
+    text-decoration: none;
+    color: var(--bg-black)
 }
 
 
