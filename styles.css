@@ -17,6 +17,7 @@ body{
     width: 30rem;
     transition: transform .3s;
     padding: 0 1rem;
+    user-select: none;
 }
 
 .logo:hover {
