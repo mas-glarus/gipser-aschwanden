@@ -170,10 +170,11 @@ h3 {
 
 .offer__content {
     width: 80%;
-    margin: 7rem auto 0 auto;
+    margin: 5rem auto 0 auto;
 }
 
 .offer__content h3 {
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -509,8 +510,36 @@ h6 {
         justify-content: flex-start;
     }
 
+    .banner__content {
+        margin-top: 3rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .header__top__nav {
         display: none;
+        width: 100%;
+    }
+
+    .header__top__nav ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header__top__nav ul li {
+        text-align: center;
+    }
+
+    .header__top__nav ul li {
+        padding: 1rem 1rem;
+    }
+
+    .header__top__nav ul li a {
+        padding: 0;
+    }
+    .header__top__nav.active {
+        display: flex;
     }
 
     .header__top {
@@ -613,10 +642,26 @@ h6 {
         height: 3px;
     }
 
+    h6 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 400;
+        padding-left: 1rem;
+    }
+
+    .contact__details img {
+        width: 1rem;
+        height: 1rem;
+    }
+
 
 }
 
 @media (max-width: 480px) {
+
+    .header__top__nav ul li a{
+        font-size: 1rem;
+    }
 
     .toggle-button {
         top: 1rem;
