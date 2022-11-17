@@ -25,6 +25,10 @@ html, body {
 
 /*---LOGO---*/
 
+.header__logo-img {
+    display: none;
+}
+
 .banner__content {
     max-width: var(--max-width);
     width: 80%;
@@ -412,15 +416,12 @@ h6 {
     font-weight: 800;
 }
 
-.footer_contact h3 {
-    text-align: center;
+.footer__logo-img {
+    display: none;
 }
 
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 1rem;
+.footer_contact h3 {
+    text-align: center;
 }
 
 .copyright img {
@@ -433,9 +434,20 @@ h6 {
     padding: 0 0 0 .25rem;
 }
 
+.copyright__icon {
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .impressum {
     font-size: .75rem;
-    padding: 0 1rem 0 0;
+    padding: 1rem 0;
 }
 
 .impressum a {
@@ -443,8 +455,50 @@ h6 {
     color: var(--bg-black)
 }
 
+@media (max-width: 1200px){
 
-@media (max-width: 900px) {
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+        position:relative;
+        align-items: center;
+    }
+    
+    .about__content-image {
+        max-width: 75%;
+    }
+    
+    .about__content-text {
+        padding: 3rem 0 0 0;
+        position: static;
+        background-color: white;
+        text-align: center;
+    }
+    
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container .card .face {
+        width: 31.5rem;
+        height: 24.15rem;
+        transition: 0.5s;
+    }
+
+    .card-container .card .face.face2 {
+        transform: translateY(-17.15rem);
+    }
+
+
+
+}
+
+
+@media (max-width: 910px) {
 
     .bottom__company {
         margin-right: 4rem;
@@ -468,25 +522,137 @@ h6 {
         display: flex;
     }
 
-}
+    .about__content-image {
+        max-width: 100%;
+    }
 
-@media (max-width: 812px) {
-    .about__content {
+    .offer__content-text{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footer-container {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 7rem;
-        position:static;
+        align-items: center;
     }
-    
-    .about__content-image {
-        max-width: 75%;
+
+    .footer-container h3 {
+        text-align: center;
     }
-    
-    .about__content-text {
-        padding: 5rem 0 0 5rem;
-        position: static;
-        background-color: white;
-        bottom: 0;
-        right: 0;
+
+    .footer__contact {
+        margin: 3rem 0;
     }
+
+    .phone,
+    .mail {
+        justify-content: center;
+    }
+
+    .footer__top,
+    .footer__bottom {
+        display: none;
+    }
+
+    .footer__logo-img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer__right {
+        align-items: center;
+    }
+
+    .copyright {
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+}
+
+@media (max-width: 610px) {
+
+    .logo {
+        display: none;
+    }
+
+    .header__logo-img {
+        display: block;
+        width: 80%;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .offer__content-text{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .footer__contact {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    .toggle-button {
+        top: 1.5rem;
+        width: 2rem;
+        height: 1.5rem;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .toggle-button {
+        top: 1rem;
+    }
+
+    .card-container .card .face {
+        width: 21.5rem;
+        height: 14.15rem;
+        transition: 0.5s;
+    }
+
+    .card-container .card .face.face2 {
+        transform: translateY(-7.15rem);
+    }
+
+    .footer__logo-img {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .footer__logo {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .header__top__nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle-button {
+        top: .5rem;
+
+    }
+
 }
