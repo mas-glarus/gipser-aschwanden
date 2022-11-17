@@ -46,6 +46,11 @@ body{
     body {
         font-size: 14px;
     }
+
+    .logo:hover {
+        cursor: pointer;
+        transform: scale(0);
+    }
 }
 
 @media (max-width: 390px) {
