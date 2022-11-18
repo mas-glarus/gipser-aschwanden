@@ -345,7 +345,7 @@ h3 {
     align-items: center;
     padding: 1.5rem;
     box-sizing: border-box;
-    box-shadow: 0 1.5rem 3.5rem var(--bg-black);
+    box-shadow: 0 1.5rem 3.5rem var(--col-txt);
     transform: translateY(-7.15rem);
 }
 
