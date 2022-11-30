@@ -252,6 +252,7 @@ h3 {
   }
 
 
+
 /*---REFERENCES---*/
 
 .headingReferences {
@@ -294,17 +295,17 @@ h3 {
 }
 
 .card-container .card:nth-child(1) .icon {
-    background-image: url("./images/kafi-beuge.webp");
+    background-image: url("./images/beuge_naefels_keller.jpg");
     background-size: cover;
 }
 
 .card-container .card:nth-child(2) .icon {
-    background-image: url("./images/kafi-beuge.webp");
+    background-image: url("./images/neubau_efh_leuggelbach.jpg");
     background-size: cover;
 }
 
 .card-container .card:nth-child(3) .icon {
-    background-image: url("./images/kafi-beuge.webp");
+    background-image: url("./images/industrieanlage_sanierung.jpg");
     background-size: cover;
 }
 
@@ -364,7 +365,7 @@ h3 {
 .card-container .card .face.face2 .content h3 {
     margin: 0 0 1rem 0;
     padding: 0;
-    color: var(--bg-white);
+    color: var(--bg-black);
     font-size: 2rem;
     text-align: center;
 } 
